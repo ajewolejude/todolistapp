@@ -1,0 +1,42 @@
+
+
+
+<div class="container color-dark">
+    <div class="col">
+        <p>
+            This shows your TO-DO List. <a href="" (click)="sendMeHome()"><strong>Take me back</strong></a>
+          </p>
+    </div>
+  
+  </div>
+  
+  <div class="container color-light" [@goals]="goals.length">
+    <div class="col">
+        <ul >
+            <li *ngFor="let goal of goals">
+              {{ goal }}<br>
+            </li>
+          
+          </ul>
+          
+    </div>
+    
+  </div>
+
+
+  <div class="con color-dark">
+      <div class="col">
+          <p>
+              This software was developed by  <a href="https://www.linkedin.com/in/jude-ajewole-40002a140/" ><strong>Ajewole Adedamola Jude</strong></a>
+            </p>
+            <p><strong>Email: adedamolaajewole@gmail.com</strong>
+                 </p>
+                 <p>
+                    Click here for  <a href="https://ajewolejude.github.com/todoapplist/" ><strong>Live Testing</strong></a>
+                  </p>  
+                  <p>
+                      Click here for  <a href="https://github.com/ajewolejude/todoapplist/" ><strong>Github repository</strong></a>
+                    </p>  
+      </div>
+    
+    </div>

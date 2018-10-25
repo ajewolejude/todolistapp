@@ -1,0 +1,46 @@
+<div class="container color-dark">
+  <div class="col">
+    <p>Add a TO-DO List</p>
+  </div>
+  <div class="col">
+    <p>Your TO-DO List ({{itemCount}})</p>
+  </div>
+</div>
+
+<div class="container color-light" [@goals]="goals.length">
+  <div class="col">
+    <p class="sm">Use this form below to add a new event to your TO-DO List. What do you want to do with your day</p>
+    <form>
+      <input type="text" class="txt" name="item" placeholder="Today's Plan..." [(ngModel)]="goalText">
+      <br> <span>{{goalText}}</span>
+      <input type="submit" class="btn" [value]=btnText (click) = "addItem()">
+    </form>
+  </div>
+  <div class="col">
+      <p class="sm">Tap event to remove from TO-DO List</p>
+    <p class="life-container" *ngFor="let goal of goals; let i = index" (click) = "removeItem(i)">
+      {{goal}}
+    </p>
+  </div>
+</div>
+
+
+<div class="con color-dark">
+    <div class="col">
+
+        
+
+        <p>
+            This software was developed by  <a href="https://www.linkedin.com/in/jude-ajewole-40002a140/" ><strong>Ajewole Adedamola Jude</strong></a>
+          </p>
+          <p><strong>Email: adedamolaajewole@gmail.com</strong>
+               </p>
+               <p>
+                  Click here for  <a href="https://ajewolejude.github.com/todoapplist" ><strong>Live Testing</strong></a>
+                </p>  
+                <p>
+                    Click here for  <a href="https://github.com/ajewolejude/todoapplist" ><strong>Github repository</strong></a>
+                  </p>  
+    </div>
+  
+  </div>

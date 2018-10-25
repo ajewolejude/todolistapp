@@ -1,0 +1,45 @@
+.container{
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+.con{
+    width: 50%;
+    align-content: center;
+    margin: 15px;
+    float: right;
+}
+
+.col{
+    padding: .4em 1.3em;
+}
+.color-dark{
+    background: #7B1FA2;
+
+}
+.color-light{
+    background: #CE93D8
+}
+
+input.txt{
+    border: 0;
+    padding: 1em;
+    width: 80%;
+    margin-bottom: 2em;
+}
+
+input.btn{
+    border: 0;
+    display: block;
+    padding: 1em 3em;
+    color: #003A61;
+    background: #A5F883;
+    cursor: pointer;
+    margin-bottom: 1em;
+
+}
+.life-container{
+    background: #9C27B0;
+    padding: .5em;
+    font-weight: bold;
+    cursor: pointer;
+}
